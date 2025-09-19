@@ -1,0 +1,54 @@
+/* =========================
+   Global Reset ve Ayarlar
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Link stili */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Butonlar */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Konteyner */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Responsive yardımcı */
+img {
+  max-width: 100%;
+  display: block;
+}

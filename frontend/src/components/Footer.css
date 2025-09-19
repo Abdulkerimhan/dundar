@@ -1,0 +1,66 @@
+.footer {
+  background: linear-gradient(135deg, #222, #333);
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  font-family: "Segoe UI", sans-serif;
+  border-top: 3px solid #d4af37;
+}
+
+.footer p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Sosyal medya ikonları */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.socials a:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Her ikon hover’da kendi rengini alır */
+.socials a:nth-child(1):hover { color: #1877f2; } /* Facebook */
+.socials a:nth-child(2):hover { color: #1da1f2; } /* Twitter */
+.socials a:nth-child(3):hover { color: #e4405f; } /* Instagram */
+.socials a:nth-child(4):hover { color: #ff0000; } /* YouTube */
+.socials a:nth-child(5):hover { color: #0a66c2; } /* LinkedIn */
+.socials a:nth-child(6):hover { color: #0088cc; } /* Telegram */
+.socials a:nth-child(7):hover { color: #000000; } /* TikTok */
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .socials {
+    gap: 12px;
+  }
+
+  .socials a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+  }
+}

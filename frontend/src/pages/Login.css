@@ -1,0 +1,157 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.login-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37;
+  font-size: 24px;
+}
+
+/* ✅ Logo animasyonlu */
+.logo {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 120px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border: 1px solid #d4af37;
+  outline: none;
+  box-shadow: 0 0 5px rgba(212,175,55,0.5);
+}
+
+/* ✅ Şifre göster/gizle */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.btn-login {
+  width: 100%;
+  background: #d4af37;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #c19e34;
+  transform: translateY(-1px);
+}
+
+.forgot {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgot a {
+  color: #666;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.login-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobil uyum */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+  }
+  .logo {
+    width: 90px;
+  }
+}

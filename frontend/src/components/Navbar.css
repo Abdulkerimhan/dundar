@@ -1,0 +1,159 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 2px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d4af37;
+  letter-spacing: 1px;
+}
+
+/* Menü */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-links li a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: #d4af37;
+}
+
+/* Giriş / Kayıt / Kullanıcı */
+.nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.user-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap; /* mobilde kaymayı engeller */
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #d4af37;
+  color: white;
+}
+
+.btn-primary {
+  background: #d4af37;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-logout {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #e74c3c;
+  background: #e74c3c;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.btn-logout:hover {
+  opacity: 0.8;
+}
+
+/* Hamburger Menü */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Mobil uyum */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 220px;
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: -2px 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+.cart-count {
+  background: #ef4444; /* kırmızı baloncuk */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 6px;
+}

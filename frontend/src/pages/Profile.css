@@ -1,0 +1,64 @@
+.profile-page {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d4af37;
+}
+
+.profile-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-group input.readonly {
+  background: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.btn-save {
+  width: 100%;
+  background: #d4af37;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-save:hover {
+  opacity: 0.9;
+}
+
+/* Mobil uyum */
+@media (max-width: 480px) {
+  .profile-form {
+    padding: 20px;
+  }
+}

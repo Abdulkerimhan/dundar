@@ -1,0 +1,154 @@
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Sol taraf - resimler */
+.product-detail .images {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.product-detail .main-img {
+  width: 100%;
+  max-width: 450px;    /* ✅ biraz küçültüldü */
+  height: 320px;       /* ✅ sabitlendi */
+  border-radius: 10px;
+  object-fit: contain; /* ✅ kırpma yok */
+  background: #f9f9f9; /* boş alan gri görünsün */
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail küçük resimler */
+.product-detail .thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-detail .thumbs img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover; /* ✅ küçük karelerde kırpma olur */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+
+.product-detail .thumbs img:hover {
+  transform: scale(1.05);
+}
+
+.product-detail .thumbs img.active {
+  border: 2px solid #2563eb; /* mavi çerçeve */
+}
+
+/* Sağ taraf - bilgiler */
+.product-detail .info {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.product-detail .info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.product-detail .desc {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ---------------------- */
+/* 💰 Fiyat kutusu        */
+/* ---------------------- */
+.price-box {
+  margin-bottom: 20px;
+}
+
+.price-box .price {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Normal fiyat (çizgisiz) */
+.price-box .normal {
+  color: #555;
+  text-decoration: none;
+}
+
+/* Lisanslı/indirimli fiyat */
+.price-box .licensed {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* ---------------------- */
+/* 🛒 Sepete ekle butonu  */
+/* ---------------------- */
+.btn-cart {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  max-width: 250px;
+}
+
+.btn-cart:hover {
+  background: #1d4ed8;
+}
+
+/* ---------------------- */
+/* 📱 Responsive Tasarım  */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-detail .info {
+    text-align: center;
+  }
+
+  .price-box .price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail .info h2 {
+    font-size: 22px;
+  }
+
+  .product-detail .desc {
+    font-size: 14px;
+  }
+
+  .btn-cart {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .product-detail .thumbs img {
+    width: 55px;
+    height: 55px;
+  }
+}

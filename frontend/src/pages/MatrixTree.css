@@ -1,0 +1,42 @@
+.matrix-tree {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.matrix-node {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: relative;
+  min-width: 120px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.matrix-node:hover {
+  background: #27ae60;
+  color: white;
+}
+
+.matrix-children {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.matrix-line {
+  width: 2px;
+  height: 20px;
+  background: #999;
+  margin: auto;
+}

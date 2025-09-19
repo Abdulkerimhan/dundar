@@ -1,0 +1,83 @@
+.admin-panel {
+  padding: 40px 20px;
+}
+
+.admin-panel h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d4af37;
+}
+
+.admin-panel h3 {
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #d4af37;
+  color: white;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.btn-edit, .btn-delete {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-edit {
+  background: #4a90e2;
+  color: white;
+}
+
+.btn-edit:hover {
+  opacity: 0.8;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  opacity: 0.8;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .btn-edit, .btn-delete {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}

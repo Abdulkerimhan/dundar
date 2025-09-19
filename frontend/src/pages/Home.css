@@ -1,0 +1,383 @@
+/* ==============================
+   Genel Ayarlar
+============================== */
+.home {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ==============================
+   Hero Bölümü
+============================== */
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #d97706;
+  transform: scale(1.05);
+}
+
+/* ==============================
+   Features Bölümü
+============================== */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.features .card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.features .card:hover {
+  transform: translateY(-6px);
+  background: #f3f4f6;
+}
+
+/* ==============================
+   Hibrit Model Bölümü
+============================== */
+.hybrid {
+  background: #f9fafb;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hybrid h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hybrid p {
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.hybrid img {
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==============================
+   Ürün Bölümleri (Showcase)
+============================== */
+.showcase {
+  padding: 60px 20px;
+}
+
+.showcase h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-mini {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-mini img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-mini h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.product-mini .licensed {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.product-mini:hover {
+  transform: translateY(-6px);
+}
+
+/* ==============================
+   Kampanya Ürünü
+============================== */
+.campaign {
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.campaign h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.campaign-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.campaign-card img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.campaign-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.campaign-card .normal {
+  text-decoration: line-through;
+  color: #f87171;
+}
+
+.campaign-card .licensed {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.campaign-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ==============================
+   Reklam Banner (Marquee)
+============================== */
+.ad-banner {
+  background: #111827; /* koyu arka plan */
+  color: #fbbf24; /* altın sarısı yazı */
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: sticky;   /* 👈 navbar gibi sabit */
+  top: 60px;          /* 👈 navbar yüksekliği kadar boşluk bırak */
+  z-index: 999;       /* her şeyin üstünde kalsın */
+  border-bottom: 2px solid #f59e0b;
+}
+
+.ad-track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+}
+
+.ad-track span {
+  margin: 0 50px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ==============================
+   Ürün Kartları
+============================== */
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-mini {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-mini img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.product-mini h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.product-mini .normal {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.product-mini .licensed {
+  color: #10b981; /* yeşil */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.product-mini button {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-mini button:hover {
+  background: #1e40af;
+}
+
+.product-mini:hover {
+  transform: translateY(-6px);
+}
+
+.product-mini:hover img {
+  transform: scale(1.05);
+}
+
+.price-normal {
+  color: #6b7280; /* gri */
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.price-licensed {
+  color: #10b981; /* yeşil */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.product-actions button:hover {
+  background: #1e40af;
+}
+
+.price-normal {
+  color: #6b7280; /* gri */
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.price-licensed {
+  color: #10b981; /* yeşil */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.product-mini img {
+  width: 100%;
+  max-width: 220px;   /* ✅ genişlik sınırı */
+  height: 150px;      /* ✅ sabit yükseklik */
+  object-fit: contain; /* ✅ resim kırpılmadan ortalansın */
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+  background: #f9f9f9; /* ✅ boşluk gri fon */
+  padding: 6px;
+}
+
+.campaign-card img {
+  width: 180px;        /* ✅ kampanya kartında daha küçük */
+  height: 140px;
+  object-fit: contain;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 6px;
+}

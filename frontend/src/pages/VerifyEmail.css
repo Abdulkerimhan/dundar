@@ -1,0 +1,95 @@
+.verify-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.verify-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.verify-form .logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.verify-form h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.verify-form p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn-verify {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 12px; /* ✅ resend butonundan biraz boşluk bırak */
+}
+
+.btn-verify:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* ✅ Kodu Tekrar Gönder butonu */
+.btn-resend {
+  background: #e5e7eb; /* gri */
+  color: #111827;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-resend:hover {
+  background: #d1d5db;
+}
+
+.btn-resend:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
