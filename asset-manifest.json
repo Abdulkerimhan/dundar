@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dundar/static/css/main.4bda8b82.css",
+    "main.js": "/dundar/static/js/main.d2a5f606.js",
+    "static/media/ftsline.png": "/dundar/static/media/ftsline.c17f272c3ae2f60c683a.png",
+    "index.html": "/dundar/index.html",
+    "main.4bda8b82.css.map": "/dundar/static/css/main.4bda8b82.css.map",
+    "main.d2a5f606.js.map": "/dundar/static/js/main.d2a5f606.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bda8b82.css",
+    "static/js/main.d2a5f606.js"
+  ]
+}
